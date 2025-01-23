@@ -4,7 +4,7 @@ import { qwikVite } from "@builder.io/qwik/optimizer";
  * This is the base config for vite.
  * When building, the adapter config is used which loads this file and extends it.
  */
-import { type UserConfig, defineConfig } from "vite";
+import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import pkg from "./package.json";
 
@@ -18,7 +18,7 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
  */
 export default defineConfig(() => {
   return {
-    base: "/pao-system-web-app/",
+    base: "/",
     plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
