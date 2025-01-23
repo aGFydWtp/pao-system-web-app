@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://agfydwtp.github.io/pao-system-web-app",
+        origin: "https://agfydwtp.github.io",
         base: "/pao-system-web-app/",
       }),
     ],
