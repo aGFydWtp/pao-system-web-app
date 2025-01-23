@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "trailingCommas": "es5"
+    }
+  },
+  "files": {
+    "ignore": [
+      "**/node_modules/**",
+      "**/.pnpm-store/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.output/**",
+      "**/coverage/**",
+      "**/server/**",
+      "**/tmp/**",
+      "**/.cache/**",
+      "**/.temp/**",
+      "**/*.js",
+      "**/*.cjs",
+      "**/*.mjs"
+    ]
+  }
+}

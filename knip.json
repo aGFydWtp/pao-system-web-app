@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/knip@latest/schema.json",
+  "entry": [
+    "src/entry.dev.tsx",
+    "src/entry.ssr.tsx",
+    "src/entry.preview.tsx",
+    "src/routes/index.tsx",
+    "src/routes/layout.tsx",
+    "src/routes/service-worker.ts"
+  ],
+  "project": ["src/**/*.ts", "src/**/*.tsx"],
+  "ignore": ["**/*.d.ts"]
+}
