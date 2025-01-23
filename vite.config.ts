@@ -16,8 +16,9 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
 /**
  * Note that Vite normally starts from `index.html` but the qwikCity plugin makes start at `src/entry.ssr.tsx` instead.
  */
-export default defineConfig(({ command, mode }): UserConfig => {
+export default defineConfig(() => {
   return {
+    base: "/pao-system-web-app/",
     plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
