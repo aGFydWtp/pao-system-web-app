@@ -21,7 +21,6 @@ export default function (opts: RenderToStreamOptions) {
   return renderToStream(<Root />, {
     manifest,
     ...opts,
-    base: "/pao-system-web-app/",
     // Use container attributes to set attributes on the html tag.
     containerAttributes: {
       lang: "en-us",

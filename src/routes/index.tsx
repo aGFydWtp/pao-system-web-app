@@ -156,5 +156,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Random Sentence Generator",
+  title: "PAO System",
 };
