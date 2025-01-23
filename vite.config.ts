@@ -19,6 +19,9 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
 export default defineConfig(() => {
   return {
     base: "/",
+    build: {
+      ssr: false,
+    },
     plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
