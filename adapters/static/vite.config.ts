@@ -12,10 +12,8 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin:
-          process.env.BOLT_DEPLOY_URL ||
-          "https://agfydwtp.github.io/pao-system-web-app/",
-        base: "",
+        origin: process.env.BOLT_DEPLOY_URL || "https://agfydwtp.github.io",
+        base: "/pao-system-web-app/",
       }),
     ],
   };
