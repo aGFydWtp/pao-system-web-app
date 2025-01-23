@@ -12,8 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: process.env.BOLT_DEPLOY_URL || "https://agfydwtp.github.io",
-        base: "/pao-system-web-app/",
+        origin: process.env.BOLT_DEPLOY_URL || "https://pao.hr20k.com/",
       }),
     ],
   };
