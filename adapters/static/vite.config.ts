@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: process.env.BOLT_DEPLOY_URL || "https://yoursite.qwik.dev",
+        origin: "https://agfydwtp.github.io/pao-system-web-app",
       }),
     ],
   };
