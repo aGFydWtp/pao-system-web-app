@@ -16,8 +16,16 @@ export default component$(() => {
 
   const handleShuffle = $(() => {
     const keys = Object.keys(customSentences.value);
-    const randomIndex = Math.floor(Math.random() * keys.length);
-    currentKey.value = keys[randomIndex];
+    if (keys.length < 2) {
+      currentKey.value = keys[0];
+    } else {
+      let newKey: string;
+      do {
+        const randomIndex = Math.floor(Math.random() * keys.length);
+        newKey = keys[randomIndex];
+      } while (newKey === currentKey.value);
+      currentKey.value = newKey;
+    }
     showValue.value = false;
   });
 
